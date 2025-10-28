@@ -1,2 +1,1 @@
-# dmdesign-page.github.io
-GitHub Pages
+EA00 invention machine 
