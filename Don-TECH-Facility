@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DON TECH Facility</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f4f8fb;
+    color: #222;
+}
+
+header {
+    background: #333fa7;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 720px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 9px;
+    padding: 2rem;
+    box-shadow: 0 6px 24px #0001;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333fa7;
+    margin-bottom: .6rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+input, textarea {
+    padding: 0.7rem;
+    border: 1px solid #b2c6ea;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    background: #333fa7;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover { background: #4767f5; }
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.96rem;
+    margin-top: 3rem;
+}
+    <header>
+        <h1>DON TECH Facility</h1>
+        <p>Innovative Solutions for the Digital Era</p>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>DON TECH Facility provides top-tier IT solutions, consulting, and tech support services. Our mission is to drive digital transformation for businesses worldwide.</p>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Cloud Computing</li>
+                <li>Custom Software Development</li>
+                <li>Cybersecurity</li>
+                <li>Tech Consulting</li>
+                <li>IoT Solutions</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="thankyou" style="display:none;">Thank you for contacting us!</div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 DON TECH Facility. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+// Simple contact form thank you effect
+document.getElementById('contactForm').onsubmit = function(e) {
+    e.preventDefault();
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('thankyou').style.display = 'block';
+};
+</body>
+</html>
