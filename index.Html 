@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DON TECH Facility</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DON TECH Facility</h1>
+        <p>Innovative Solutions for the Digital Era</p>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>DON TECH Facility provides top-tier IT solutions, consulting, and tech support services. Our mission is to drive digital transformation for businesses worldwide.</p>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Cloud Computing</li>
+                <li>Custom Software Development</li>
+                <li>Cybersecurity</li>
+                <li>Tech Consulting</li>
+                <li>IoT Solutions</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="thankyou" style="display:none;">Thank you for contacting us!</div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 DON TECH Facility. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
